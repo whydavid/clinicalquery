@@ -146,9 +146,8 @@ public class UI extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTextArea1);
 
         jToggleButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon.png"))); // NOI18N
-        jToggleButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
-        jToggleButton1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
+        jToggleButton1.setText("+");
+        jToggleButton1.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
         jButton1.setText("View");
         jButton1.setBorder(null);
@@ -163,7 +162,7 @@ public class UI extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -196,9 +195,8 @@ public class UI extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTextArea2);
 
         jToggleButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon.png"))); // NOI18N
-        jToggleButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
-        jToggleButton2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
+        jToggleButton2.setText("+");
+        jToggleButton2.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
         jButton2.setText("View");
         jButton2.setBorder(null);
@@ -246,9 +244,8 @@ public class UI extends javax.swing.JFrame {
         jScrollPane4.setViewportView(jTextArea3);
 
         jToggleButton3.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon.png"))); // NOI18N
-        jToggleButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
-        jToggleButton3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
+        jToggleButton3.setText("+");
+        jToggleButton3.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
         jButton3.setText("View");
         jButton3.setBorder(null);
@@ -296,9 +293,8 @@ public class UI extends javax.swing.JFrame {
         jScrollPane5.setViewportView(jTextArea4);
 
         jToggleButton4.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon.png"))); // NOI18N
-        jToggleButton4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
-        jToggleButton4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
+        jToggleButton4.setText("+");
+        jToggleButton4.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
         jButton4.setText("View");
         jButton4.setBorder(null);
@@ -346,9 +342,8 @@ public class UI extends javax.swing.JFrame {
         jScrollPane7.setViewportView(jTextArea6);
 
         jToggleButton6.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon.png"))); // NOI18N
-        jToggleButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
-        jToggleButton6.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
+        jToggleButton6.setText("+");
+        jToggleButton6.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
         jButton6.setText("View");
         jButton6.setBorder(null);
@@ -396,9 +391,8 @@ public class UI extends javax.swing.JFrame {
         jScrollPane8.setViewportView(jTextArea7);
 
         jToggleButton7.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon.png"))); // NOI18N
-        jToggleButton7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
-        jToggleButton7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
+        jToggleButton7.setText("+");
+        jToggleButton7.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
         jButton7.setText("View");
         jButton7.setBorder(null);
@@ -446,9 +440,8 @@ public class UI extends javax.swing.JFrame {
         jScrollPane9.setViewportView(jTextArea8);
 
         jToggleButton8.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon.png"))); // NOI18N
-        jToggleButton8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
-        jToggleButton8.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
+        jToggleButton8.setText("+");
+        jToggleButton8.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
         jButton8.setText("View");
         jButton8.setBorder(null);
@@ -496,9 +489,8 @@ public class UI extends javax.swing.JFrame {
         jScrollPane10.setViewportView(jTextArea9);
 
         jToggleButton9.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon.png"))); // NOI18N
-        jToggleButton9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
-        jToggleButton9.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
+        jToggleButton9.setText("+");
+        jToggleButton9.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
         jButton9.setText("View");
         jButton9.setBorder(null);
@@ -546,9 +538,8 @@ public class UI extends javax.swing.JFrame {
         jScrollPane11.setViewportView(jTextArea10);
 
         jToggleButton10.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon.png"))); // NOI18N
-        jToggleButton10.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
-        jToggleButton10.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
+        jToggleButton10.setText("+");
+        jToggleButton10.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
         jButton10.setText("View");
         jButton10.setBorder(null);
@@ -596,9 +587,8 @@ public class UI extends javax.swing.JFrame {
         jScrollPane12.setViewportView(jTextArea11);
 
         jToggleButton11.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon.png"))); // NOI18N
-        jToggleButton11.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
-        jToggleButton11.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/asu/bmi/dyauch/clinicalquery/ui/Thumbs-up-icon-pressed.png"))); // NOI18N
+        jToggleButton11.setText("+");
+        jToggleButton11.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
         jButton11.setText("View");
         jButton11.setBorder(null);
