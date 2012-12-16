@@ -13,8 +13,9 @@ public class DocView extends javax.swing.JFrame {
     /**
      * Creates new form DocView
      */
-    public DocView() {
+    public DocView(String text) {
         initComponents();
+        txtMain.setText(text);
     }
 
     /**

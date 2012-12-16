@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
@@ -22,6 +23,8 @@ import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.queryparser.classic.ParseException;
+import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
@@ -47,6 +50,8 @@ public class QueryEngine {
     }
     private Directory dir;
     private IndexSearcher is;
+    private QueryParser qp;
+    
     private QueryEngine(File path) throws FileNotFoundException, UnsupportedEncodingException, IOException{
         dir = new RAMDirectory();
         StandardAnalyzer sa = new StandardAnalyzer(Version.LUCENE_40);
@@ -68,7 +73,8 @@ public class QueryEngine {
         iw.close();
         IndexReader ir = DirectoryReader.open(dir);
         is = new IndexSearcher(ir);
-        is.setSimilarity(new DefaultSimilarity());
+        is.setSimilarity(new DefaultSimilarity()); 
+        qp = new QueryParser(Version.LUCENE_40, "contents",sa);
     }
     
     public TopDocs runQuery(Query q, Integer numResults) throws IOException{
@@ -79,4 +85,19 @@ public class QueryEngine {
         return is.doc(sd.doc);
     }
     
+    public String getDocText(Document doc) throws FileNotFoundException, IOException{
+        String out = "";
+        String curline;
+        BufferedReader br = new BufferedReader(new FileReader(doc.get("path")));
+        while ((curline = br.readLine()) != null) 
+        {
+            out += (curline + "\n");
+        }
+            
+        return out;                
+    }
+    
+    public Query parseQuery(String q) throws ParseException{
+        return qp.parse(q);
+    }
 }
