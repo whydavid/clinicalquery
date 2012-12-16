@@ -4,14 +4,16 @@
  */
 package edu.asu.bmi.dyauch.clinicalquery;
 
+import edu.mit.jwi.item.ISynsetID;
+import edu.mit.jwi.item.IWord;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import junit.framework.TestCase;
 
 /**
- *
- * @author David
+ * These tests are really poorly written (not proper unit tests) due to time constraints during initial development.
+ * They really should be rewritten!
  */
 public class DictTest extends TestCase {
     
@@ -25,6 +27,14 @@ public class DictTest extends TestCase {
         ArrayList<Word> results = (ArrayList<Word>)dict.stemWord("hopes");
         for (Word res:results){
             System.out.println(res.getStem() + " " + res.getPOS());
+            res.findSynsets(dict);
+            System.out.println(res.isInWN());
+            for (ISynsetID sid:res.getSynsetIDs()){
+                System.out.println(sid.toString());
+                for( String w : dict.getSynonymSetById(sid)){
+                System.out .println(w);
+                }
+            }
         }
     }
 

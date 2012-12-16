@@ -4,8 +4,10 @@
  */
 package edu.asu.bmi.dyauch.clinicalquery;
 
+import edu.mit.jwi.item.ISynsetID;
 import edu.mit.jwi.item.POS;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -15,7 +17,7 @@ public class Word {
     private String surface_form;
     private String wordID;
     private String stem;
-    private ArrayList<String> synsetIDs;
+    private ArrayList<ISynsetID> synsetIDs;
     private POS pos;
     private Boolean inWN;
     
@@ -33,7 +35,7 @@ public class Word {
         return pos;
     }
     public void findSynsets(IDict dict){
-        synsetIDs = (ArrayList<String>)dict.getSynonymSets(stem, pos);
+        synsetIDs = (ArrayList<ISynsetID>)dict.getSynonymSets(this);
         if (synsetIDs.isEmpty()){
             inWN = false;
         }else{
@@ -41,6 +43,10 @@ public class Word {
         }
         
         //Not implemented yet
+    }
+    
+    public List<ISynsetID> getSynsetIDs(){
+        return synsetIDs;
     }
     
     public String getStem(){

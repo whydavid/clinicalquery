@@ -4,6 +4,7 @@
  */
 package edu.asu.bmi.dyauch.clinicalquery;
 
+import edu.mit.jwi.item.ISynsetID;
 import edu.mit.jwi.item.POS;
 import java.util.List;
 
@@ -13,6 +14,6 @@ import java.util.List;
  */
 public interface IDict {
     public List<Word> stemWord(String word);
-    public List<String> getSynonymSets(String word, POS pos);
-    public List<String> getSynonymSetById(String ID);
+    public List<ISynsetID> getSynonymSets(Word word);
+    public List<String> getSynonymSetById(ISynsetID ID);
 }

@@ -6,6 +6,11 @@ package edu.asu.bmi.dyauch.clinicalquery;
 
 import edu.mit.jwi.Dictionary;
 import edu.mit.jwi.IDictionary;
+import edu.mit.jwi.item.IIndexWord;
+import edu.mit.jwi.item.ISynset;
+import edu.mit.jwi.item.ISynsetID;
+import edu.mit.jwi.item.IWord;
+import edu.mit.jwi.item.IWordID;
 import edu.mit.jwi.item.POS;
 import edu.mit.jwi.morph.IStemmer;
 import edu.mit.jwi.morph.WordnetStemmer;
@@ -49,12 +54,23 @@ public class Dict implements IDict{
         return stemmed_words;
     }
 
-    public List<String> getSynonymSets(String word, POS pos) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public List<ISynsetID> getSynonymSets(Word word) {
+        IIndexWord idxWord = jwi_Dict.getIndexWord(word.getStem(), word.getPOS());
+        ArrayList<ISynsetID> synsets = new ArrayList<ISynsetID>();
+        for (IWordID wordID : idxWord.getWordIDs()){
+            IWord iword = jwi_Dict.getWord( wordID );
+            ISynsetID synset = iword.getSynset().getID();
+            synsets.add(synset);
+        }
+        return synsets;
     }
 
-    public List<String> getSynonymSetById(String ID) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public List<String> getSynonymSetById(ISynsetID ID) {
+        List<String> ret = new ArrayList<String>();
+        for (IWord iw:jwi_Dict.getSynset(ID).getWords()){
+            ret.add(iw.getLemma());
+        }
+        return ret;
     }
     
 }
