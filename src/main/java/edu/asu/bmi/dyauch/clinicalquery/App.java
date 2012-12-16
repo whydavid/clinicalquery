@@ -1,6 +1,6 @@
 package edu.asu.bmi.dyauch.clinicalquery;
 
-import edu.asu.bmi.dyauch.clinicalquery.ui.UI;
+import edu.asu.bmi.dyauch.clinicalquery.ui.*;
 
 /**
  * Launches app and interprets command line parameters.

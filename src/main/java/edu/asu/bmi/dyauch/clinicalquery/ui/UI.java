@@ -32,56 +32,56 @@ public class UI extends javax.swing.JFrame {
         btnSubmitQuery = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        pnlRes1 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jButton1 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
+        txtRes1 = new javax.swing.JTextArea();
+        btnRel1 = new javax.swing.JToggleButton();
+        btnView1 = new javax.swing.JButton();
+        pnlRes2 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        jToggleButton2 = new javax.swing.JToggleButton();
-        jButton2 = new javax.swing.JButton();
-        jPanel5 = new javax.swing.JPanel();
+        txtRes2 = new javax.swing.JTextArea();
+        btnRel2 = new javax.swing.JToggleButton();
+        btnView2 = new javax.swing.JButton();
+        pnlRes3 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
-        jToggleButton3 = new javax.swing.JToggleButton();
-        jButton3 = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
+        txtRes3 = new javax.swing.JTextArea();
+        btnRel3 = new javax.swing.JToggleButton();
+        btnView3 = new javax.swing.JButton();
+        pnlRes4 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTextArea4 = new javax.swing.JTextArea();
-        jToggleButton4 = new javax.swing.JToggleButton();
-        jButton4 = new javax.swing.JButton();
-        jPanel8 = new javax.swing.JPanel();
+        txtRes4 = new javax.swing.JTextArea();
+        btnRel4 = new javax.swing.JToggleButton();
+        btnView4 = new javax.swing.JButton();
+        pnlRes5 = new javax.swing.JPanel();
         jScrollPane7 = new javax.swing.JScrollPane();
-        jTextArea6 = new javax.swing.JTextArea();
-        jToggleButton6 = new javax.swing.JToggleButton();
-        jButton6 = new javax.swing.JButton();
-        jPanel9 = new javax.swing.JPanel();
+        txtRes5 = new javax.swing.JTextArea();
+        btnRel5 = new javax.swing.JToggleButton();
+        btnView5 = new javax.swing.JButton();
+        pnlRes6 = new javax.swing.JPanel();
         jScrollPane8 = new javax.swing.JScrollPane();
-        jTextArea7 = new javax.swing.JTextArea();
-        jToggleButton7 = new javax.swing.JToggleButton();
-        jButton7 = new javax.swing.JButton();
-        jPanel10 = new javax.swing.JPanel();
+        txtRes6 = new javax.swing.JTextArea();
+        btnRel6 = new javax.swing.JToggleButton();
+        btnView6 = new javax.swing.JButton();
+        pnlRes7 = new javax.swing.JPanel();
         jScrollPane9 = new javax.swing.JScrollPane();
-        jTextArea8 = new javax.swing.JTextArea();
-        jToggleButton8 = new javax.swing.JToggleButton();
-        jButton8 = new javax.swing.JButton();
-        jPanel11 = new javax.swing.JPanel();
+        txtRes7 = new javax.swing.JTextArea();
+        btnRel7 = new javax.swing.JToggleButton();
+        btnView7 = new javax.swing.JButton();
+        pnlRes8 = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
-        jTextArea9 = new javax.swing.JTextArea();
-        jToggleButton9 = new javax.swing.JToggleButton();
-        jButton9 = new javax.swing.JButton();
-        jPanel12 = new javax.swing.JPanel();
+        txtRes8 = new javax.swing.JTextArea();
+        btnRel8 = new javax.swing.JToggleButton();
+        btnView8 = new javax.swing.JButton();
+        pnlRes9 = new javax.swing.JPanel();
         jScrollPane11 = new javax.swing.JScrollPane();
-        jTextArea10 = new javax.swing.JTextArea();
-        jToggleButton10 = new javax.swing.JToggleButton();
-        jButton10 = new javax.swing.JButton();
-        jPanel13 = new javax.swing.JPanel();
+        txtRes9 = new javax.swing.JTextArea();
+        btnRel9 = new javax.swing.JToggleButton();
+        btnView9 = new javax.swing.JButton();
+        pnlRes10 = new javax.swing.JPanel();
         jScrollPane12 = new javax.swing.JScrollPane();
-        jTextArea11 = new javax.swing.JTextArea();
-        jToggleButton11 = new javax.swing.JToggleButton();
-        jButton11 = new javax.swing.JButton();
+        txtRes10 = new javax.swing.JTextArea();
+        btnRel10 = new javax.swing.JToggleButton();
+        btnView10 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
 
@@ -134,493 +134,543 @@ public class UI extends javax.swing.JFrame {
 
         jPanel2.setPreferredSize(new java.awt.Dimension(377, 1275));
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel3.setMaximumSize(new java.awt.Dimension(1000, 111));
-        jPanel3.setMinimumSize(new java.awt.Dimension(357, 111));
-        jPanel3.setName(""); // NOI18N
-        jPanel3.setPreferredSize(new java.awt.Dimension(357, 111));
+        pnlRes1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlRes1.setMaximumSize(new java.awt.Dimension(1000, 111));
+        pnlRes1.setMinimumSize(new java.awt.Dimension(357, 111));
+        pnlRes1.setName(""); // NOI18N
+        pnlRes1.setPreferredSize(new java.awt.Dimension(357, 111));
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane2.setViewportView(jTextArea1);
+        txtRes1.setColumns(20);
+        txtRes1.setRows(5);
+        jScrollPane2.setViewportView(txtRes1);
 
-        jToggleButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton1.setText("+");
-        jToggleButton1.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnRel1.setBackground(new java.awt.Color(255, 255, 255));
+        btnRel1.setText("+");
+        btnRel1.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
-        jButton1.setText("View");
-        jButton1.setBorder(null);
-        jButton1.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton1.setMaximumSize(new java.awt.Dimension(65, 37));
-        jButton1.setMinimumSize(new java.awt.Dimension(65, 37));
-        jButton1.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView1.setText("View");
+        btnView1.setBorder(null);
+        btnView1.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnView1.setMaximumSize(new java.awt.Dimension(65, 37));
+        btnView1.setMinimumSize(new java.awt.Dimension(65, 37));
+        btnView1.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewButtonActionHandler(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlRes1Layout = new javax.swing.GroupLayout(pnlRes1);
+        pnlRes1.setLayout(pnlRes1Layout);
+        pnlRes1Layout.setHorizontalGroup(
+            pnlRes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRes1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnlRes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnView1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        pnlRes1Layout.setVerticalGroup(
+            pnlRes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRes1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlRes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlRes1Layout.createSequentialGroup()
+                        .addComponent(btnRel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnView1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel4.setMaximumSize(new java.awt.Dimension(1000, 111));
-        jPanel4.setMinimumSize(new java.awt.Dimension(357, 111));
-        jPanel4.setName(""); // NOI18N
+        pnlRes2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlRes2.setMaximumSize(new java.awt.Dimension(1000, 111));
+        pnlRes2.setMinimumSize(new java.awt.Dimension(357, 111));
+        pnlRes2.setName(""); // NOI18N
 
         jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane3.setViewportView(jTextArea2);
+        txtRes2.setColumns(20);
+        txtRes2.setRows(5);
+        jScrollPane3.setViewportView(txtRes2);
 
-        jToggleButton2.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton2.setText("+");
-        jToggleButton2.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnRel2.setBackground(new java.awt.Color(255, 255, 255));
+        btnRel2.setText("+");
+        btnRel2.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
-        jButton2.setText("View");
-        jButton2.setBorder(null);
-        jButton2.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton2.setMaximumSize(new java.awt.Dimension(65, 37));
-        jButton2.setMinimumSize(new java.awt.Dimension(65, 37));
-        jButton2.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView2.setText("View");
+        btnView2.setBorder(null);
+        btnView2.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnView2.setMaximumSize(new java.awt.Dimension(65, 37));
+        btnView2.setMinimumSize(new java.awt.Dimension(65, 37));
+        btnView2.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewButtonActionHandler(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlRes2Layout = new javax.swing.GroupLayout(pnlRes2);
+        pnlRes2.setLayout(pnlRes2Layout);
+        pnlRes2Layout.setHorizontalGroup(
+            pnlRes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRes2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnlRes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRel2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnView2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+        pnlRes2Layout.setVerticalGroup(
+            pnlRes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRes2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlRes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlRes2Layout.createSequentialGroup()
+                        .addComponent(btnRel2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnView2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel5.setMaximumSize(new java.awt.Dimension(1000, 111));
-        jPanel5.setMinimumSize(new java.awt.Dimension(357, 111));
-        jPanel5.setName(""); // NOI18N
+        pnlRes3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlRes3.setMaximumSize(new java.awt.Dimension(1000, 111));
+        pnlRes3.setMinimumSize(new java.awt.Dimension(357, 111));
+        pnlRes3.setName(""); // NOI18N
 
         jScrollPane4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextArea3.setColumns(20);
-        jTextArea3.setRows(5);
-        jScrollPane4.setViewportView(jTextArea3);
+        txtRes3.setColumns(20);
+        txtRes3.setRows(5);
+        jScrollPane4.setViewportView(txtRes3);
 
-        jToggleButton3.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton3.setText("+");
-        jToggleButton3.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnRel3.setBackground(new java.awt.Color(255, 255, 255));
+        btnRel3.setText("+");
+        btnRel3.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
-        jButton3.setText("View");
-        jButton3.setBorder(null);
-        jButton3.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton3.setMaximumSize(new java.awt.Dimension(65, 37));
-        jButton3.setMinimumSize(new java.awt.Dimension(65, 37));
-        jButton3.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView3.setText("View");
+        btnView3.setBorder(null);
+        btnView3.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnView3.setMaximumSize(new java.awt.Dimension(65, 37));
+        btnView3.setMinimumSize(new java.awt.Dimension(65, 37));
+        btnView3.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewButtonActionHandler(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlRes3Layout = new javax.swing.GroupLayout(pnlRes3);
+        pnlRes3.setLayout(pnlRes3Layout);
+        pnlRes3Layout.setHorizontalGroup(
+            pnlRes3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRes3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnlRes3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRel3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnView3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+        pnlRes3Layout.setVerticalGroup(
+            pnlRes3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRes3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jToggleButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlRes3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlRes3Layout.createSequentialGroup()
+                        .addComponent(btnRel3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnView3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel6.setMaximumSize(new java.awt.Dimension(1000, 111));
-        jPanel6.setMinimumSize(new java.awt.Dimension(357, 111));
-        jPanel6.setName(""); // NOI18N
+        pnlRes4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlRes4.setMaximumSize(new java.awt.Dimension(1000, 111));
+        pnlRes4.setMinimumSize(new java.awt.Dimension(357, 111));
+        pnlRes4.setName(""); // NOI18N
 
         jScrollPane5.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane5.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextArea4.setColumns(20);
-        jTextArea4.setRows(5);
-        jScrollPane5.setViewportView(jTextArea4);
+        txtRes4.setColumns(20);
+        txtRes4.setRows(5);
+        jScrollPane5.setViewportView(txtRes4);
 
-        jToggleButton4.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton4.setText("+");
-        jToggleButton4.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnRel4.setBackground(new java.awt.Color(255, 255, 255));
+        btnRel4.setText("+");
+        btnRel4.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
-        jButton4.setText("View");
-        jButton4.setBorder(null);
-        jButton4.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton4.setMaximumSize(new java.awt.Dimension(65, 37));
-        jButton4.setMinimumSize(new java.awt.Dimension(65, 37));
-        jButton4.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView4.setText("View");
+        btnView4.setBorder(null);
+        btnView4.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnView4.setMaximumSize(new java.awt.Dimension(65, 37));
+        btnView4.setMinimumSize(new java.awt.Dimension(65, 37));
+        btnView4.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewButtonActionHandler(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlRes4Layout = new javax.swing.GroupLayout(pnlRes4);
+        pnlRes4.setLayout(pnlRes4Layout);
+        pnlRes4Layout.setHorizontalGroup(
+            pnlRes4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRes4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnlRes4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRel4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnView4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+        pnlRes4Layout.setVerticalGroup(
+            pnlRes4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRes4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jToggleButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlRes4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlRes4Layout.createSequentialGroup()
+                        .addComponent(btnRel4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnView4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jPanel8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel8.setMaximumSize(new java.awt.Dimension(1000, 111));
-        jPanel8.setMinimumSize(new java.awt.Dimension(357, 111));
-        jPanel8.setName(""); // NOI18N
+        pnlRes5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlRes5.setMaximumSize(new java.awt.Dimension(1000, 111));
+        pnlRes5.setMinimumSize(new java.awt.Dimension(357, 111));
+        pnlRes5.setName(""); // NOI18N
 
         jScrollPane7.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane7.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextArea6.setColumns(20);
-        jTextArea6.setRows(5);
-        jScrollPane7.setViewportView(jTextArea6);
+        txtRes5.setColumns(20);
+        txtRes5.setRows(5);
+        jScrollPane7.setViewportView(txtRes5);
 
-        jToggleButton6.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton6.setText("+");
-        jToggleButton6.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnRel5.setBackground(new java.awt.Color(255, 255, 255));
+        btnRel5.setText("+");
+        btnRel5.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
-        jButton6.setText("View");
-        jButton6.setBorder(null);
-        jButton6.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton6.setMaximumSize(new java.awt.Dimension(65, 37));
-        jButton6.setMinimumSize(new java.awt.Dimension(65, 37));
-        jButton6.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView5.setText("View");
+        btnView5.setBorder(null);
+        btnView5.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnView5.setMaximumSize(new java.awt.Dimension(65, 37));
+        btnView5.setMinimumSize(new java.awt.Dimension(65, 37));
+        btnView5.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewButtonActionHandler(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlRes5Layout = new javax.swing.GroupLayout(pnlRes5);
+        pnlRes5.setLayout(pnlRes5Layout);
+        pnlRes5Layout.setHorizontalGroup(
+            pnlRes5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRes5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnlRes5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRel5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnView5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+        pnlRes5Layout.setVerticalGroup(
+            pnlRes5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRes5Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(jToggleButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlRes5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlRes5Layout.createSequentialGroup()
+                        .addComponent(btnRel5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnView5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jPanel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel9.setMaximumSize(new java.awt.Dimension(1000, 111));
-        jPanel9.setMinimumSize(new java.awt.Dimension(357, 111));
-        jPanel9.setName(""); // NOI18N
+        pnlRes6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlRes6.setMaximumSize(new java.awt.Dimension(1000, 111));
+        pnlRes6.setMinimumSize(new java.awt.Dimension(357, 111));
+        pnlRes6.setName(""); // NOI18N
 
         jScrollPane8.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane8.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextArea7.setColumns(20);
-        jTextArea7.setRows(5);
-        jScrollPane8.setViewportView(jTextArea7);
+        txtRes6.setColumns(20);
+        txtRes6.setRows(5);
+        jScrollPane8.setViewportView(txtRes6);
 
-        jToggleButton7.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton7.setText("+");
-        jToggleButton7.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnRel6.setBackground(new java.awt.Color(255, 255, 255));
+        btnRel6.setText("+");
+        btnRel6.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
-        jButton7.setText("View");
-        jButton7.setBorder(null);
-        jButton7.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton7.setMaximumSize(new java.awt.Dimension(65, 37));
-        jButton7.setMinimumSize(new java.awt.Dimension(65, 37));
-        jButton7.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView6.setText("View");
+        btnView6.setBorder(null);
+        btnView6.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnView6.setMaximumSize(new java.awt.Dimension(65, 37));
+        btnView6.setMinimumSize(new java.awt.Dimension(65, 37));
+        btnView6.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewButtonActionHandler(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlRes6Layout = new javax.swing.GroupLayout(pnlRes6);
+        pnlRes6.setLayout(pnlRes6Layout);
+        pnlRes6Layout.setHorizontalGroup(
+            pnlRes6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRes6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnlRes6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRel6, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnView6, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+        pnlRes6Layout.setVerticalGroup(
+            pnlRes6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRes6Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(jToggleButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlRes6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlRes6Layout.createSequentialGroup()
+                        .addComponent(btnRel6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnView6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jPanel10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel10.setMaximumSize(new java.awt.Dimension(1000, 111));
-        jPanel10.setMinimumSize(new java.awt.Dimension(357, 111));
-        jPanel10.setName(""); // NOI18N
+        pnlRes7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlRes7.setMaximumSize(new java.awt.Dimension(1000, 111));
+        pnlRes7.setMinimumSize(new java.awt.Dimension(357, 111));
+        pnlRes7.setName(""); // NOI18N
 
         jScrollPane9.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane9.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextArea8.setColumns(20);
-        jTextArea8.setRows(5);
-        jScrollPane9.setViewportView(jTextArea8);
+        txtRes7.setColumns(20);
+        txtRes7.setRows(5);
+        jScrollPane9.setViewportView(txtRes7);
 
-        jToggleButton8.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton8.setText("+");
-        jToggleButton8.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnRel7.setBackground(new java.awt.Color(255, 255, 255));
+        btnRel7.setText("+");
+        btnRel7.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
-        jButton8.setText("View");
-        jButton8.setBorder(null);
-        jButton8.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton8.setMaximumSize(new java.awt.Dimension(65, 37));
-        jButton8.setMinimumSize(new java.awt.Dimension(65, 37));
-        jButton8.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView7.setText("View");
+        btnView7.setBorder(null);
+        btnView7.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnView7.setMaximumSize(new java.awt.Dimension(65, 37));
+        btnView7.setMinimumSize(new java.awt.Dimension(65, 37));
+        btnView7.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewButtonActionHandler(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlRes7Layout = new javax.swing.GroupLayout(pnlRes7);
+        pnlRes7.setLayout(pnlRes7Layout);
+        pnlRes7Layout.setHorizontalGroup(
+            pnlRes7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRes7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnlRes7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRel7, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnView7, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+        pnlRes7Layout.setVerticalGroup(
+            pnlRes7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRes7Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addComponent(jToggleButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlRes7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlRes7Layout.createSequentialGroup()
+                        .addComponent(btnRel7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnView7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jPanel11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel11.setMaximumSize(new java.awt.Dimension(1000, 111));
-        jPanel11.setMinimumSize(new java.awt.Dimension(357, 111));
-        jPanel11.setName(""); // NOI18N
+        pnlRes8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlRes8.setMaximumSize(new java.awt.Dimension(1000, 111));
+        pnlRes8.setMinimumSize(new java.awt.Dimension(357, 111));
+        pnlRes8.setName(""); // NOI18N
 
         jScrollPane10.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane10.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextArea9.setColumns(20);
-        jTextArea9.setRows(5);
-        jScrollPane10.setViewportView(jTextArea9);
+        txtRes8.setColumns(20);
+        txtRes8.setRows(5);
+        jScrollPane10.setViewportView(txtRes8);
 
-        jToggleButton9.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton9.setText("+");
-        jToggleButton9.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnRel8.setBackground(new java.awt.Color(255, 255, 255));
+        btnRel8.setText("+");
+        btnRel8.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
-        jButton9.setText("View");
-        jButton9.setBorder(null);
-        jButton9.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton9.setMaximumSize(new java.awt.Dimension(65, 37));
-        jButton9.setMinimumSize(new java.awt.Dimension(65, 37));
-        jButton9.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView8.setText("View");
+        btnView8.setBorder(null);
+        btnView8.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnView8.setMaximumSize(new java.awt.Dimension(65, 37));
+        btnView8.setMinimumSize(new java.awt.Dimension(65, 37));
+        btnView8.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewButtonActionHandler(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlRes8Layout = new javax.swing.GroupLayout(pnlRes8);
+        pnlRes8.setLayout(pnlRes8Layout);
+        pnlRes8Layout.setHorizontalGroup(
+            pnlRes8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRes8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnlRes8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRel8, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnView8, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
+        pnlRes8Layout.setVerticalGroup(
+            pnlRes8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRes8Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jToggleButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlRes8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlRes8Layout.createSequentialGroup()
+                        .addComponent(btnRel8, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnView8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jPanel12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel12.setMaximumSize(new java.awt.Dimension(1000, 111));
-        jPanel12.setMinimumSize(new java.awt.Dimension(357, 111));
-        jPanel12.setName(""); // NOI18N
+        pnlRes9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlRes9.setMaximumSize(new java.awt.Dimension(1000, 111));
+        pnlRes9.setMinimumSize(new java.awt.Dimension(357, 111));
+        pnlRes9.setName(""); // NOI18N
 
         jScrollPane11.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane11.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextArea10.setColumns(20);
-        jTextArea10.setRows(5);
-        jScrollPane11.setViewportView(jTextArea10);
+        txtRes9.setColumns(20);
+        txtRes9.setRows(5);
+        jScrollPane11.setViewportView(txtRes9);
 
-        jToggleButton10.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton10.setText("+");
-        jToggleButton10.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnRel9.setBackground(new java.awt.Color(255, 255, 255));
+        btnRel9.setText("+");
+        btnRel9.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
-        jButton10.setText("View");
-        jButton10.setBorder(null);
-        jButton10.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton10.setMaximumSize(new java.awt.Dimension(65, 37));
-        jButton10.setMinimumSize(new java.awt.Dimension(65, 37));
-        jButton10.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView9.setText("View");
+        btnView9.setBorder(null);
+        btnView9.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnView9.setMaximumSize(new java.awt.Dimension(65, 37));
+        btnView9.setMinimumSize(new java.awt.Dimension(65, 37));
+        btnView9.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewButtonActionHandler(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlRes9Layout = new javax.swing.GroupLayout(pnlRes9);
+        pnlRes9.setLayout(pnlRes9Layout);
+        pnlRes9Layout.setHorizontalGroup(
+            pnlRes9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRes9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane11, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnlRes9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRel9, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnView9, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+        pnlRes9Layout.setVerticalGroup(
+            pnlRes9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRes9Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel12Layout.createSequentialGroup()
-                        .addComponent(jToggleButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlRes9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlRes9Layout.createSequentialGroup()
+                        .addComponent(btnRel9, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnView9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jPanel13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel13.setMaximumSize(new java.awt.Dimension(1000, 111));
-        jPanel13.setMinimumSize(new java.awt.Dimension(357, 111));
-        jPanel13.setName(""); // NOI18N
+        pnlRes10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        pnlRes10.setMaximumSize(new java.awt.Dimension(1000, 111));
+        pnlRes10.setMinimumSize(new java.awt.Dimension(357, 111));
+        pnlRes10.setName(""); // NOI18N
 
         jScrollPane12.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane12.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextArea11.setColumns(20);
-        jTextArea11.setRows(5);
-        jScrollPane12.setViewportView(jTextArea11);
+        txtRes10.setColumns(20);
+        txtRes10.setRows(5);
+        jScrollPane12.setViewportView(txtRes10);
 
-        jToggleButton11.setBackground(new java.awt.Color(255, 255, 255));
-        jToggleButton11.setText("+");
-        jToggleButton11.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnRel10.setBackground(new java.awt.Color(255, 255, 255));
+        btnRel10.setText("+");
+        btnRel10.setMargin(new java.awt.Insets(2, 2, 2, 2));
 
-        jButton11.setText("View");
-        jButton11.setBorder(null);
-        jButton11.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        jButton11.setMaximumSize(new java.awt.Dimension(65, 37));
-        jButton11.setMinimumSize(new java.awt.Dimension(65, 37));
-        jButton11.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView10.setText("View");
+        btnView10.setBorder(null);
+        btnView10.setMargin(new java.awt.Insets(2, 2, 2, 2));
+        btnView10.setMaximumSize(new java.awt.Dimension(65, 37));
+        btnView10.setMinimumSize(new java.awt.Dimension(65, 37));
+        btnView10.setPreferredSize(new java.awt.Dimension(65, 37));
+        btnView10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewButtonActionHandler(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlRes10Layout = new javax.swing.GroupLayout(pnlRes10);
+        pnlRes10.setLayout(pnlRes10Layout);
+        pnlRes10Layout.setHorizontalGroup(
+            pnlRes10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlRes10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane12, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnlRes10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRel10, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnView10, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
+        pnlRes10Layout.setVerticalGroup(
+            pnlRes10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlRes10Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel13Layout.createSequentialGroup()
-                        .addComponent(jToggleButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlRes10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlRes10Layout.createSequentialGroup()
+                        .addComponent(btnRel10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnView10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
@@ -632,41 +682,41 @@ public class UI extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(pnlRes2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlRes1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlRes3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlRes4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlRes5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlRes6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlRes7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlRes8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlRes9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlRes10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRes1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRes2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRes3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRes4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRes5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRes6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRes7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRes8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRes9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlRes10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(55, Short.MAX_VALUE))
         );
 
@@ -716,37 +766,48 @@ public class UI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_chkQueryExpansionActionPerformed
 
+    private void viewButtonActionHandler(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewButtonActionHandler
+        System.out.println(evt.getSource().toString());
+        if (evt.getSource() == btnView1){
+            java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new DocView().setVisible(true);
+            }
+        });
+        }
+    }//GEN-LAST:event_viewButtonActionHandler
+
     /**
      * @param args the command line arguments
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton btnRel1;
+    private javax.swing.JToggleButton btnRel10;
+    private javax.swing.JToggleButton btnRel2;
+    private javax.swing.JToggleButton btnRel3;
+    private javax.swing.JToggleButton btnRel4;
+    private javax.swing.JToggleButton btnRel5;
+    private javax.swing.JToggleButton btnRel6;
+    private javax.swing.JToggleButton btnRel7;
+    private javax.swing.JToggleButton btnRel8;
+    private javax.swing.JToggleButton btnRel9;
     private javax.swing.JButton btnSubmitQuery;
+    private javax.swing.JButton btnView1;
+    private javax.swing.JButton btnView10;
+    private javax.swing.JButton btnView2;
+    private javax.swing.JButton btnView3;
+    private javax.swing.JButton btnView4;
+    private javax.swing.JButton btnView5;
+    private javax.swing.JButton btnView6;
+    private javax.swing.JButton btnView7;
+    private javax.swing.JButton btnView8;
+    private javax.swing.JButton btnView9;
     private javax.swing.JCheckBox chkQueryExpansion;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
@@ -758,26 +819,26 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea10;
-    private javax.swing.JTextArea jTextArea11;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextArea jTextArea4;
-    private javax.swing.JTextArea jTextArea6;
-    private javax.swing.JTextArea jTextArea7;
-    private javax.swing.JTextArea jTextArea8;
-    private javax.swing.JTextArea jTextArea9;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton10;
-    private javax.swing.JToggleButton jToggleButton11;
-    private javax.swing.JToggleButton jToggleButton2;
-    private javax.swing.JToggleButton jToggleButton3;
-    private javax.swing.JToggleButton jToggleButton4;
-    private javax.swing.JToggleButton jToggleButton6;
-    private javax.swing.JToggleButton jToggleButton7;
-    private javax.swing.JToggleButton jToggleButton8;
-    private javax.swing.JToggleButton jToggleButton9;
+    private javax.swing.JPanel pnlRes1;
+    private javax.swing.JPanel pnlRes10;
+    private javax.swing.JPanel pnlRes2;
+    private javax.swing.JPanel pnlRes3;
+    private javax.swing.JPanel pnlRes4;
+    private javax.swing.JPanel pnlRes5;
+    private javax.swing.JPanel pnlRes6;
+    private javax.swing.JPanel pnlRes7;
+    private javax.swing.JPanel pnlRes8;
+    private javax.swing.JPanel pnlRes9;
     private javax.swing.JTextField txtQuery;
+    private javax.swing.JTextArea txtRes1;
+    private javax.swing.JTextArea txtRes10;
+    private javax.swing.JTextArea txtRes2;
+    private javax.swing.JTextArea txtRes3;
+    private javax.swing.JTextArea txtRes4;
+    private javax.swing.JTextArea txtRes5;
+    private javax.swing.JTextArea txtRes6;
+    private javax.swing.JTextArea txtRes7;
+    private javax.swing.JTextArea txtRes8;
+    private javax.swing.JTextArea txtRes9;
     // End of variables declaration//GEN-END:variables
 }
