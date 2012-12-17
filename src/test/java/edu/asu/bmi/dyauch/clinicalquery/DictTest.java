@@ -23,7 +23,8 @@ public class DictTest extends TestCase {
 
     public void testStemWord() throws IOException {
         File wn = new File("C:\\Users\\David\\Dropbox\\School\\BMI 591 Info Retrieval\\ClinicalQuery\\dict");
-        Dict dict = new Dict(wn);
+        Dict.initialize(wn);
+        Dict dict = Dict.getInstance();
         ArrayList<Word> results = (ArrayList<Word>)dict.stemWord("hopes");
         for (Word res:results){
             System.out.println(res.getStem() + " " + res.getPOS());

@@ -14,7 +14,9 @@ public class App
 {
     public static void main( String[] args ) throws FileNotFoundException, UnsupportedEncodingException, IOException
     {
+        //Set up the QueryEngine and WordNet Dict(ionary)
         QueryEngine.initialize(new File(args[0]));
+        Dict.initialize(new File(args[1]));
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

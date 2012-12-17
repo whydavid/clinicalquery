@@ -51,6 +51,7 @@ public class QueryEngine {
     private Directory dir;
     private IndexSearcher is;
     private QueryParser qp;
+    public IndexReader ir2;
     
     private QueryEngine(File path) throws FileNotFoundException, UnsupportedEncodingException, IOException{
         dir = new RAMDirectory();
@@ -72,6 +73,7 @@ public class QueryEngine {
         }
         iw.close();
         IndexReader ir = DirectoryReader.open(dir);
+        ir2 = ir;
         is = new IndexSearcher(ir);
         is.setSimilarity(new DefaultSimilarity()); 
         qp = new QueryParser(Version.LUCENE_40, "contents",sa);

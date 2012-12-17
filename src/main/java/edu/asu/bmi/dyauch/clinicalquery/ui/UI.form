@@ -26,7 +26,7 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="2" attributes="0">
-                  <Component id="jScrollPane1" alignment="2" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="2" pref="727" max="32767" attributes="0"/>
                   <Group type="102" alignment="2" attributes="0">
                       <Component id="jButton5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
@@ -48,7 +48,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="215" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="220" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -77,20 +77,16 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="2" attributes="0">
                       <Group type="102" alignment="2" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtQuery" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="2" attributes="0">
-                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                          <Component id="chkQueryExpansion" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                          <Component id="btnExpand" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                           <Component id="btnSubmitQuery" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="txtQuery" alignment="2" pref="667" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -102,22 +98,13 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnSubmitQuery" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="chkQueryExpansion" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnExpand" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JCheckBox" name="chkQueryExpansion">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Use Query Expansion"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chkQueryExpansionActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JTextField" name="txtQuery">
         </Component>
         <Component class="javax.swing.JButton" name="btnSubmitQuery">
@@ -126,6 +113,14 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSubmitQueryActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnExpand">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Expand Query"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExpandActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -152,7 +147,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="pnlRes2" max="32767" attributes="0"/>
-                          <Component id="pnlRes1" max="32767" attributes="0"/>
+                          <Component id="pnlRes1" pref="688" max="32767" attributes="0"/>
                           <Component id="pnlRes3" alignment="0" max="32767" attributes="0"/>
                           <Component id="pnlRes4" alignment="1" max="32767" attributes="0"/>
                           <Component id="pnlRes5" alignment="0" max="32767" attributes="0"/>
@@ -318,7 +313,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jScrollPane13" pref="293" max="32767" attributes="0"/>
+                          <Component id="jScrollPane13" pref="624" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="btnRel2" alignment="0" min="-2" pref="34" max="-2" attributes="0"/>

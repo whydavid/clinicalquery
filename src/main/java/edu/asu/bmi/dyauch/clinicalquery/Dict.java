@@ -15,7 +15,9 @@ import edu.mit.jwi.item.POS;
 import edu.mit.jwi.morph.IStemmer;
 import edu.mit.jwi.morph.WordnetStemmer;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -29,8 +31,17 @@ public class Dict implements IDict{
     private File WN_Location;
     private IDictionary jwi_Dict;
     private IStemmer stemmer;
+    private static Dict _dict;
     
-    public Dict(File WN_Location) throws IOException{
+    public static Dict getInstance(){
+        return _dict;
+    }
+    
+    public static void initialize(File file) throws FileNotFoundException, UnsupportedEncodingException, IOException{
+        _dict = new Dict(file);
+    }
+    
+    private Dict(File WN_Location) throws IOException{
         this.WN_Location = WN_Location;
         this.jwi_Dict = new Dictionary(WN_Location);
         Boolean dict_open = jwi_Dict.open();
@@ -49,6 +60,7 @@ public class Dict implements IDict{
                     stemmed_words.add(new Word(word,stem,pos));
                 }
             }
+            stemmed_words.add(new Word(word,word,pos));
         }
         
         return stemmed_words;
@@ -57,14 +69,19 @@ public class Dict implements IDict{
     public List<ISynsetID> getSynonymSets(Word word) {
         IIndexWord idxWord = jwi_Dict.getIndexWord(word.getStem(), word.getPOS());
         ArrayList<ISynsetID> synsets = new ArrayList<ISynsetID>();
-        for (IWordID wordID : idxWord.getWordIDs()){
-            IWord iword = jwi_Dict.getWord( wordID );
-            ISynsetID synset = iword.getSynset().getID();
-            synsets.add(synset);
+        if (idxWord != null){
+            for (IWordID wordID : idxWord.getWordIDs()){
+            
+                IWord iword = jwi_Dict.getWord( wordID );
+                ISynsetID synset = iword.getSynset().getID();
+                synsets.add(synset);
+            }
         }
         return synsets;
     }
-
+    public String getGlossBySynsetID(ISynsetID ID){
+        return jwi_Dict.getSynset(ID).getGloss();
+    }
     public List<String> getSynonymSetById(ISynsetID ID) {
         List<String> ret = new ArrayList<String>();
         for (IWord iw:jwi_Dict.getSynset(ID).getWords()){

@@ -6,9 +6,12 @@ package edu.asu.bmi.dyauch.clinicalquery.ui;
 
 import edu.asu.bmi.dyauch.clinicalquery.QueryEngine;
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.apache.lucene.index.Term;
 import org.apache.lucene.queryparser.classic.ParseException;
+import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.ScoreDoc;
 
 /**
@@ -20,6 +23,7 @@ public class UI extends javax.swing.JFrame {
     /**
      * Creates new form UI
      */
+    private BooleanQuery expandedQuery;
     public UI() {
         initComponents();
     }
@@ -34,9 +38,9 @@ public class UI extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        chkQueryExpansion = new javax.swing.JCheckBox();
         txtQuery = new javax.swing.JTextField();
         btnSubmitQuery = new javax.swing.JButton();
+        btnExpand = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel2 = new javax.swing.JPanel();
         pnlRes1 = new javax.swing.JPanel();
@@ -98,18 +102,17 @@ public class UI extends javax.swing.JFrame {
         jPanel1.setToolTipText("Query");
         jPanel1.setName(""); // NOI18N
 
-        chkQueryExpansion.setText("Use Query Expansion");
-        chkQueryExpansion.setName(""); // NOI18N
-        chkQueryExpansion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                chkQueryExpansionActionPerformed(evt);
-            }
-        });
-
         btnSubmitQuery.setText("Submit Query");
         btnSubmitQuery.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSubmitQueryActionPerformed(evt);
+            }
+        });
+
+        btnExpand.setText("Expand Query");
+        btnExpand.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExpandActionPerformed(evt);
             }
         });
 
@@ -118,17 +121,14 @@ public class UI extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(txtQuery))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(chkQueryExpansion)
-                        .addGap(47, 47, 47)
-                        .addComponent(btnSubmitQuery)
-                        .addGap(38, 38, 38)))
-                .addContainerGap())
+                        .addComponent(btnExpand)
+                        .addGap(50, 50, 50)
+                        .addComponent(btnSubmitQuery))
+                    .addComponent(txtQuery, javax.swing.GroupLayout.DEFAULT_SIZE, 667, Short.MAX_VALUE))
+                .addGap(38, 38, 38))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -138,7 +138,7 @@ public class UI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSubmitQuery)
-                    .addComponent(chkQueryExpansion)))
+                    .addComponent(btnExpand)))
         );
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -231,7 +231,7 @@ public class UI extends javax.swing.JFrame {
             pnlRes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlRes2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane13, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
+                .addComponent(jScrollPane13, javax.swing.GroupLayout.DEFAULT_SIZE, 624, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnlRes2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnRel2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -667,7 +667,7 @@ public class UI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pnlRes2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlRes1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlRes1, javax.swing.GroupLayout.DEFAULT_SIZE, 688, Short.MAX_VALUE)
                     .addComponent(pnlRes3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlRes4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlRes5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -717,7 +717,7 @@ public class UI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton5)
                         .addGap(46, 46, 46)
@@ -734,7 +734,7 @@ public class UI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5)
@@ -745,10 +745,6 @@ public class UI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void chkQueryExpansionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkQueryExpansionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_chkQueryExpansionActionPerformed
 
     private void viewButtonActionHandler(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewButtonActionHandler
         System.out.println(evt.getSource().toString());
@@ -794,28 +790,24 @@ public class UI extends javax.swing.JFrame {
         });
         
     }//GEN-LAST:event_viewButtonActionHandler
-
-    private void btnSubmitQueryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitQueryActionPerformed
-
-                
-        String q = txtQuery.getText();
-        QueryEngine qe = QueryEngine.getInstance();
-        if (chkQueryExpansion.isSelected()){
-            //Implement query expansion here
-        }
+    public void submitQuery(String q, QueryEngine qe){
         try {
             ScoreDoc[] sd;
             sd = qe.runQuery(qe.parseQuery(q), 10).scoreDocs;
-            txtRes1.setText(qe.getDocText(qe.getDoc(sd[0])));
-            txtRes2.setText(qe.getDocText(qe.getDoc(sd[1])));
-            txtRes3.setText(qe.getDocText(qe.getDoc(sd[2])));
-            txtRes4.setText(qe.getDocText(qe.getDoc(sd[3])));
-            txtRes5.setText(qe.getDocText(qe.getDoc(sd[4])));
-            txtRes6.setText(qe.getDocText(qe.getDoc(sd[5])));
-            txtRes7.setText(qe.getDocText(qe.getDoc(sd[6])));
-            txtRes8.setText(qe.getDocText(qe.getDoc(sd[7])));
-            txtRes9.setText(qe.getDocText(qe.getDoc(sd[8])));
-            txtRes10.setText(qe.getDocText(qe.getDoc(sd[9])));
+            switch (sd.length) {
+                case 10:    txtRes10.setText(qe.getDocText(qe.getDoc(sd[9])));
+                case  9:    txtRes9.setText(qe.getDocText(qe.getDoc(sd[8])));
+                case  8:    txtRes8.setText(qe.getDocText(qe.getDoc(sd[7])));
+                case  7:    txtRes7.setText(qe.getDocText(qe.getDoc(sd[6])));
+                case  6:    txtRes6.setText(qe.getDocText(qe.getDoc(sd[5])));
+                case  5:    txtRes5.setText(qe.getDocText(qe.getDoc(sd[4])));
+                case  4:    txtRes4.setText(qe.getDocText(qe.getDoc(sd[3])));
+                case  3:    txtRes3.setText(qe.getDocText(qe.getDoc(sd[2])));
+                case  2:    txtRes2.setText(qe.getDocText(qe.getDoc(sd[1])));
+                case  1:    txtRes1.setText(qe.getDocText(qe.getDoc(sd[0])));
+                            break;
+                default:    break;
+            }
             txtRes1.setCaretPosition(0);
             txtRes2.setCaretPosition(0);
             txtRes3.setCaretPosition(0);
@@ -831,15 +823,87 @@ public class UI extends javax.swing.JFrame {
         } catch (IOException ex){
             
         }
+    }
+    
+    public void submitQuery(BooleanQuery q, QueryEngine qe){
+        try {
+            ScoreDoc[] sd;
+            sd = qe.runQuery(q, 10).scoreDocs;
+            switch (sd.length) {
+                case 10:    txtRes10.setText(qe.getDocText(qe.getDoc(sd[9])));
+                case  9:    txtRes9.setText(qe.getDocText(qe.getDoc(sd[8])));
+                case  8:    txtRes8.setText(qe.getDocText(qe.getDoc(sd[7])));
+                case  7:    txtRes7.setText(qe.getDocText(qe.getDoc(sd[6])));
+                case  6:    txtRes6.setText(qe.getDocText(qe.getDoc(sd[5])));
+                case  5:    txtRes5.setText(qe.getDocText(qe.getDoc(sd[4])));
+                case  4:    txtRes4.setText(qe.getDocText(qe.getDoc(sd[3])));
+                case  3:    txtRes3.setText(qe.getDocText(qe.getDoc(sd[2])));
+                case  2:    txtRes2.setText(qe.getDocText(qe.getDoc(sd[1])));
+                case  1:    txtRes1.setText(qe.getDocText(qe.getDoc(sd[0])));
+                            break;
+                default:    break;
+            }
+            txtRes1.setCaretPosition(0);
+            txtRes2.setCaretPosition(0);
+            txtRes3.setCaretPosition(0);
+            txtRes4.setCaretPosition(0);
+            txtRes5.setCaretPosition(0);
+            txtRes6.setCaretPosition(0);
+            txtRes7.setCaretPosition(0);
+            txtRes8.setCaretPosition(0);
+            txtRes9.setCaretPosition(0);
+            txtRes10.setCaretPosition(0);
         
+        } catch (IOException ex){
+            
+        }
+    }
+    private void btnSubmitQueryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitQueryActionPerformed
+        
+            txtRes1.setText("");
+            txtRes2.setText("");
+            txtRes3.setText("");
+            txtRes4.setText("");
+            txtRes5.setText("");
+            txtRes6.setText("");
+            txtRes7.setText("");
+            txtRes8.setText("");
+            txtRes9.setText("");
+            txtRes10.setText("");
+            QueryEngine qe = QueryEngine.getInstance();    
+        if (expandedQuery == null){        
+            String q = txtQuery.getText();
+            submitQuery(q,qe);
+        } else {
+            submitQuery(expandedQuery,qe);
+        }
         
     }//GEN-LAST:event_btnSubmitQueryActionPerformed
+
+    private void btnExpandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExpandActionPerformed
+        final String text = txtQuery.getText();
+        
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    SynSetChooser ssc = new SynSetChooser(text);
+                    ssc.setVisible(true);
+                    ssc.getUserInput(expandedQuery);
+                } catch (ParseException ex) {
+                    Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        });
+    }//GEN-LAST:event_btnExpandActionPerformed
 
     /**
      * @param args the command line arguments
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnExpand;
     private javax.swing.JToggleButton btnRel1;
     private javax.swing.JToggleButton btnRel10;
     private javax.swing.JToggleButton btnRel2;
@@ -861,7 +925,6 @@ public class UI extends javax.swing.JFrame {
     private javax.swing.JButton btnView7;
     private javax.swing.JButton btnView8;
     private javax.swing.JButton btnView9;
-    private javax.swing.JCheckBox chkQueryExpansion;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton5;
     private javax.swing.JPanel jPanel1;

@@ -16,6 +16,7 @@ public class DocView extends javax.swing.JFrame {
     public DocView(String text) {
         initComponents();
         txtMain.setText(text);
+        txtMain.setCaretPosition(0);
     }
 
     /**
@@ -38,6 +39,7 @@ public class DocView extends javax.swing.JFrame {
         txtMain.setLineWrap(true);
         txtMain.setRows(5);
         txtMain.setWrapStyleWord(true);
+        txtMain.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtMain.setEnabled(false);
         jScrollPane1.setViewportView(txtMain);
 
@@ -55,7 +57,7 @@ public class DocView extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 725, Short.MAX_VALUE)
                     .addComponent(btnClose))
                 .addContainerGap())
         );

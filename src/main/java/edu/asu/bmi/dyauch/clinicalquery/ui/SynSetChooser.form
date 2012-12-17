@@ -75,14 +75,16 @@
         <Component class="javax.swing.JTextArea" name="jTextArea1">
           <Properties>
             <Property name="columns" type="int" value="20"/>
+            <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
+            <Property name="wrapStyleWord" type="boolean" value="true"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Do the following words correspond with the intended sense of: "/>
+        <Property name="text" type="java.lang.String" value="Does the following definition correspond with the intended sense of:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblWord">
@@ -100,6 +102,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Yes"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnYesActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnNo">
       <Properties>
@@ -108,6 +113,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="No"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNoActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
