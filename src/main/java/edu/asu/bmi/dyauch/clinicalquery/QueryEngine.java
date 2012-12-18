@@ -17,6 +17,7 @@ import java.util.logging.Logger;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
+import org.apache.lucene.document.FieldType;
 import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.DirectoryReader;
@@ -75,7 +76,12 @@ public class QueryEngine {
             Document doc = new Document();
             doc.add(new StringField("path", fi.getAbsolutePath(), Field.Store.YES));
  //           doc.add(new TextField("contents", new BufferedReader(new InputStreamReader(fis, "UTF-8"))));
-            doc.add(new TextField("contents", out, Field.Store.YES));
+            
+            FieldType ft = new FieldType();
+            ft.setIndexed(true);
+            ft.setTokenized(true);
+            ft.setStoreTermVectors(true);
+            doc.add(new Field("contents", out, Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.YES));
             iw.addDocument(doc);
             fis.close();
         }

@@ -23,6 +23,7 @@ import org.apache.lucene.index.TermsEnum;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.BooleanClause;
+import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
@@ -1038,7 +1039,11 @@ public class UI extends javax.swing.JFrame {
             TermsEnum termsEnum = tvector.iterator(null);
             BytesRef term = null;
             while ((term = termsEnum.next()) != null) {
-                System.out.println(termsEnum.term().utf8ToString());
+                if (Math.random() > .97){
+                    TermQuery tq = new TermQuery(new Term(termsEnum.term().utf8ToString()));
+                    tq.setBoost(0.1f);
+                    expandedQuery.add(tq,Occur.SHOULD);
+                }
             }
         }
         }
