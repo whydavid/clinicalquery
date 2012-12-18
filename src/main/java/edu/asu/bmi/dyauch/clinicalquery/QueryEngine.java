@@ -64,10 +64,18 @@ public class QueryEngine {
         iwc.setSimilarity(new DefaultSimilarity());
         FileInputStream fis;
         for (File fi:files){
+            String out = "";
+            String curline;
+            BufferedReader br = new BufferedReader(new FileReader(fi));
+            while ((curline = br.readLine()) != null) 
+            {
+                out += (curline + "\n");
+            }
             fis = new FileInputStream(fi);
             Document doc = new Document();
             doc.add(new StringField("path", fi.getAbsolutePath(), Field.Store.YES));
-            doc.add(new TextField("contents", new BufferedReader(new InputStreamReader(fis, "UTF-8"))));
+ //           doc.add(new TextField("contents", new BufferedReader(new InputStreamReader(fis, "UTF-8"))));
+            doc.add(new TextField("contents", out, Field.Store.YES));
             iw.addDocument(doc);
             fis.close();
         }

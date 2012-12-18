@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import javax.swing.JFrame;
 
 /**
  * Launches app and interprets command line parameters.
@@ -20,7 +21,9 @@ public class App
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new UI().setVisible(true);
+                UI ui = new UI();
+                ui.setVisible(true);
+                ui.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             }
         });
         

@@ -5,14 +5,32 @@
 package edu.asu.bmi.dyauch.clinicalquery.ui;
 
 import edu.asu.bmi.dyauch.clinicalquery.QueryEngine;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.document.Document;
 import org.apache.lucene.index.Term;
+import org.apache.lucene.index.Terms;
+import org.apache.lucene.index.TermsEnum;
 import org.apache.lucene.queryparser.classic.ParseException;
+import org.apache.lucene.queryparser.classic.QueryParser;
+import org.apache.lucene.search.BooleanClause;
 import org.apache.lucene.search.BooleanQuery;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
+import org.apache.lucene.search.TermQuery;
+import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.util.BytesRef;
+import org.apache.lucene.util.Version;
 
 /**
  *
@@ -23,9 +41,11 @@ public class UI extends javax.swing.JFrame {
     /**
      * Creates new form UI
      */
-    private BooleanQuery expandedQuery;
+    public BooleanQuery expandedQuery;
+    private final UI self;
     public UI() {
         initComponents();
+        self = this;
     }
 
     /**
@@ -707,8 +727,18 @@ public class UI extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jPanel2);
 
         jButton5.setText("Submit Feedback");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton12.setText("Done");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -888,7 +918,7 @@ public class UI extends javax.swing.JFrame {
                 try {
                     SynSetChooser ssc = new SynSetChooser(text);
                     ssc.setVisible(true);
-                    ssc.getUserInput(expandedQuery);
+                    ssc.getUserInput(self);
                 } catch (ParseException ex) {
                     Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
                 } catch (IOException ex) {
@@ -898,6 +928,125 @@ public class UI extends javax.swing.JFrame {
         });
     }//GEN-LAST:event_btnExpandActionPerformed
 
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        FileWriter fw = null;
+        try {
+            fw = new FileWriter(new File("C:\\Users\\David\\Dropbox\\School\\BMI 591 Info Retrieval\\ClinicalQuery\\out.txt"));
+            BufferedWriter bw = new BufferedWriter(fw);
+            QueryEngine qe = QueryEngine.getInstance();
+            ScoreDoc[] sd = null;
+            if (expandedQuery == null){        
+                try {
+                    String q = txtQuery.getText();
+                    sd = qe.runQuery(qe.parseQuery(q), 329).scoreDocs;
+                } catch (ParseException ex) {
+                    Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            } else {
+                try {
+                    sd = qe.runQuery(expandedQuery, 329).scoreDocs;
+                } catch (IOException ex) {
+                    Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+            Document d;
+            for (ScoreDoc doc:sd){
+                try {
+                    d=qe.getDoc(doc);
+                    bw.write(doc.score + "\t" + d.get("path") + "\r\n");
+                    
+                } catch (IOException ex) {
+                    Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+            bw.close();
+            
+            this.dispose();
+        } catch (IOException ex) {
+            Logger.getLogger(UI.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            
+        }
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        if (expandedQuery == null){
+            try{
+            expandedQuery = new BooleanQuery();
+            QueryParser qp = new QueryParser(Version.LUCENE_40, "contents",new StandardAnalyzer(Version.LUCENE_40));
+            Query q1 = qp.parse(txtQuery.getText());
+            Query q2 = q1.rewrite(QueryEngine.getInstance().ir2);
+            HashSet<Term>terms = new HashSet<Term>();
+            q2.extractTerms(terms);
+            for (Term t:terms){
+                expandedQuery.add(new TermQuery(t),BooleanClause.Occur.SHOULD);
+            }
+            } catch (Exception e) {}
+            }
+        
+        try{
+        ArrayList<ScoreDoc> reldocs = new ArrayList<ScoreDoc>();
+        ScoreDoc[] sd = QueryEngine.getInstance().runQuery(expandedQuery, 10).scoreDocs;
+        QueryEngine qe=QueryEngine.getInstance();
+        
+        if (btnRel1.isSelected()){
+            btnRel1.setSelected(false);
+            reldocs.add(sd[0]);
+        }
+        if (btnRel2.isSelected()){
+            btnRel2.setSelected(false);
+            reldocs.add(sd[1]);
+        }
+        if (btnRel3.isSelected()){
+            btnRel3.setSelected(false);
+            reldocs.add(sd[2]);
+        }
+        if (btnRel4.isSelected()){
+            btnRel4.setSelected(false);
+            reldocs.add(sd[3]);
+        }
+        if (btnRel5.isSelected()){
+            btnRel5.setSelected(false);
+            reldocs.add(sd[4]);
+        }
+        if (btnRel6.isSelected()){
+            btnRel6.setSelected(false);
+            reldocs.add(sd[5]);
+        }
+        if (btnRel7.isSelected()){
+            btnRel7.setSelected(false);
+            reldocs.add(sd[6]);
+        }
+        if (btnRel8.isSelected()){
+            btnRel8.setSelected(false);
+            reldocs.add(sd[7]);
+        }
+        if (btnRel9.isSelected()){
+            btnRel9.setSelected(false);
+            reldocs.add(sd[8]);
+        }
+        if (btnRel10.isSelected()){
+            btnRel10.setSelected(false);
+            reldocs.add(sd[9]);
+        }
+        
+        
+        for (ScoreDoc dc:reldocs){
+            Terms tvector = qe.ir2.getTermVector(dc.doc,"contents");
+            TermsEnum termsEnum = tvector.iterator(null);
+            BytesRef term = null;
+            while ((term = termsEnum.next()) != null) {
+                System.out.println(termsEnum.term().utf8ToString());
+            }
+        }
+        }
+        catch (IOException e) {System.out.println("Exception");}
+    }//GEN-LAST:event_jButton5ActionPerformed
+    
+    
+    
     /**
      * @param args the command line arguments
      */

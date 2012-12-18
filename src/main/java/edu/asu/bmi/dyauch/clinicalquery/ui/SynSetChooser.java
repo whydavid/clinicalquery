@@ -43,7 +43,7 @@ public class SynSetChooser extends javax.swing.JFrame {
     private Dict dict;
     private ISynsetID curSyn;
     private Term curterm;
-    private BooleanQuery callBackQuery;
+    private UI callBack;
     private Set<Term> terms;
     
     public SynSetChooser(String fq) throws ParseException, IOException {
@@ -56,10 +56,10 @@ public class SynSetChooser extends javax.swing.JFrame {
         query = new BooleanQuery();
     }
     
-    public void getUserInput(BooleanQuery bq) throws ParseException, IOException{
+    public void getUserInput(UI bq) throws ParseException, IOException{
         //A lot of this code can be moved to its own method so it doesn't run every time...but this is a low priority.
         if (bq != null){
-            callBackQuery = bq;
+            callBack = bq;
         }
         QueryParser qp = new QueryParser(Version.LUCENE_40, "contents",new StandardAnalyzer(Version.LUCENE_40));
         Query q1 = qp.parse(fq);
@@ -71,7 +71,8 @@ public class SynSetChooser extends javax.swing.JFrame {
         int i=0; //Part of an ugly hack to escape a loop....
         if (doneTerms.size() == terms.size() && wordsToTest.isEmpty()){
             this.setVisible(false); //CHANGE THIS
-            callBackQuery = getExpandedQuery();
+            callBack.expandedQuery = getExpandedQuery();
+            
         }
         else {
             if (wordsToTest.isEmpty())
